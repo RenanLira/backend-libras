@@ -20,4 +20,5 @@ jobs:
                 TARGET: ${{ secrets.REMOTE_TARGET }}
                 SOURCE: "."
                 SCRIPT_AFTER: |
+                    ls -al
                     docker compose up --build -d
